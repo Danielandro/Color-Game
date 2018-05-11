@@ -1,0 +1,76 @@
+body{
+    background-color: #232323;
+    margin: 0;
+    font-family: 'Montserrat', "Avenir";
+}
+
+
+h1{
+    color: white;
+    text-align: center;  
+    background: steelblue;  
+    margin: 0;
+    /* height: 180px; */
+    font-size: 1.8em;
+    text-transform: uppercase;    
+    padding: 20px 0;
+    line-height: 2em;
+}
+
+.stripe{
+    text-align: center;
+    background: white;
+    height: 30px;    
+}
+
+#message{
+    /* margin: 0 10%; */
+    display: inline-block;
+    width: 20%;    
+}
+
+.square{
+    width: 30%; /* each square takes up 1/3 of container div */ 
+    background: rgb(10, 150, 150);    
+    margin: 1.66%; /* adds space between each square */
+    padding-bottom: 30%; /* adds space inside square it shows on display, otherwise invisible. Same value as width therefore - square */
+    float: left; /* taken out of the normal flow of the document (though still remaining part of it). It is shifted to the left, until it touches the edge of the container div or another floated element. */
+    border-radius: 15%;
+    transition-duration: 0.5s;
+}
+
+#container{
+    max-width: 600px; /* set max size of conatiner div*/
+    margin: 0 auto; /* center grid on page */
+    padding-top: 20px;
+}
+
+#displayColor{
+    font-size: 2.3em;
+}
+
+button{
+    color: steelblue;
+    background-color: white;
+    border-style: none;
+    transition-duration: 0.5s;
+    height: 100%;
+    font-size: 1.1em;
+    font-weight: 400;
+    outline: none;
+    text-transform: uppercase; 
+}
+
+button:hover{
+    background-color: steelblue;
+    color: white;
+}
+
+button:focus{
+    border-style: none;
+}
+
+.selected{
+    color: white;
+    background-color: steelblue;
+}
